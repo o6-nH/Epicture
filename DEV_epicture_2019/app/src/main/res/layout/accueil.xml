@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/back"
+    tools:background="@color/back">
+
+
+<androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9C27B0"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="EPICTURE - HOME" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/button_id_home"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/Widget.AppCompat.CompoundButton.Switch"
+            android:background="#9C27B0"
+            android:backgroundTint="#9C27B0"
+            android:text="HOME" />
+        <Button
+            android:id="@+id/button_id_fav"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/Widget.AppCompat.CompoundButton.Switch"
+            android:background="#9C27B0"
+            android:backgroundTint="#9C27B0"
+            android:text="FAVORITES" />
+        <Button
+            android:id="@+id/button_id_search"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/Widget.AppCompat.CompoundButton.Switch"
+            android:background="#9C27B0"
+            android:backgroundTint="#9C27B0"
+            android:text="SEARCH" />
+
+        <Button
+            android:id="@+id/button_id_profile"
+            style="@style/Widget.AppCompat.CompoundButton.Switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#9C27B0"
+            android:backgroundTint="#9C27B0"
+            android:text="PROFILE" />
+        <Button
+            android:id="@+id/button_id_space"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/Widget.AppCompat.CompoundButton.Switch"
+            android:background="#9C27B0"
+            android:backgroundTint="#9C27B0"
+            android:text=" " />
+    </LinearLayout>
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/grid_view_album"
+        android:numColumns="auto_fit"
+        android:columnWidth="180dp"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="12dp"
+        android:padding="5dp"
+        android:stretchMode="columnWidth"
+        />
+</LinearLayout>
